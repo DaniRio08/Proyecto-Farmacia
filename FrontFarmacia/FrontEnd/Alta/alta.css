@@ -1,0 +1,73 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.alta {
+    margin-top: 0%;
+    width: 25%;
+    min-height: 20em;
+    display: flex;
+    flex-direction: column;
+    background-color:whitesmoke;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 6px 6px 5px rgb(51, 52, 52);
+}
+input, select {
+    padding: .6em;
+    margin: .3em 0 1.3em 0;
+    width: 95%;
+    border-radius: 100px;
+    font-size: 1.1em;
+    border: 1px solid black;
+    outline: none;
+}
+select {
+    width: 100%;
+}
+label {
+    margin-left: 1em;
+    color: darkblue;
+}
+button, input[type=submit] {
+    color: white;
+    font-size: 1.1em;
+    background-color: darkblue;
+    border-radius: 100px;
+    padding: .7em;
+    margin: 2em 0 0.5em 0;
+    border: none;
+    box-shadow: 5px 5px 7px rgb(2, 0, 6);
+}
+input:focus, select:focus {
+    border: 1px solid darkblue;
+}
+input[type=submit]:focus {
+    border: none;
+}
+input[type=submit] {
+    width: 100%;
+}
+button:hover, input[type=submit]:hover {
+    cursor: pointer;
+}
+button:active, input[type=submit]:active {
+    transform: scale(0.95, 0.95);
+    box-shadow: none;
+}
+.gestion {
+    background-color: darkcyan;
+    color: white;
+    position: relative;
+    left: 3%;
+}

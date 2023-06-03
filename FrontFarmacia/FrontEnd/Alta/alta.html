@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="alta.css">
+    <script src="alta.js"></script>
+    <title>Alta</title>
+</head>
+<body onload="getPatients(), getMedicines()">
+    <button onclick="gestio()" class="gestion">Volver a Gestión</button>
+    <div class="contenido">
+        <div class="alta">
+            <form id="formulario" onsubmit="enviar(event)">
+                <label for="idxip">Id del CHIP</label>
+                <input type="text" name="idxip" id="idxip" placeholder="00000000" required>
+                <label for="pacient">Email del paciente</label>
+                <select name="pacient" id="pacient" required>
+                    <option selected disabled>Paciente</option>
+                </select>
+                <label for="medicament">Medicamento</label>
+                <select name="medicament" id="medicament" required>
+                    <option selected disabled>Medicamento</option>
+                </select>
+                <label for="date">Data límite</label>
+                <input type="date" name="limit" id="limit" required>
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+            <div id="resultado"></div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
